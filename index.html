@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <div class="weather-input">
+
+      <div class="input-group">
+        <input type="text" id="userLocation" placeholder="Search for places">
+
+        
+
+        <i class="fa fa-search" onclick="findUserLocation()"></i>
+      </div>
+
+      <div class="weather-icon"></div>
+      <h2 class="temp"></h2>
+      <div class="feelsLike"></div>
+      <div class="description"></div>
+      <hr>
+
+      
+      <div class="city"></div>
+      
+    </div>
+
+    <div class="weather-output">
+      <h2 class="heading">Today's Highlights</h2>
+
+      <div class="display">
+        <div class="humidity">
+          humidity
+          <i class="fa-solid fa-water"></i>
+          <h2 id="HValue"></h2>
+        </div>
+
+        <div class="wind-speed">
+          Wind Speed
+          <i class="fa-solid fa-wind"></i>
+          <h2 id="WValue"></h2>
+        </div>
+
+        <div class="clouds">
+          Clouds
+          <i class="fa-solid fa-cloud"></i>
+          <h2 id="CValue"></h2>
+        </div>
+
+        <div class="TempV">
+          <span>
+            <i class="fa-solid fa-temperature-arrow-up"></i>
+            <p><span id="HTValue"></span>Max temp </p>
+          </span>
+        </div>
+
+        <div class="TempV">
+          <span>
+            <i class="fa-solid fa-temperature-arrow-down"></i>
+            <p><span id="LTValue"></span>Min temp </p>
+          </span>
+        </div>
+
+
+        <div class="visibility">
+          Visibility
+          <i class="fa-solid fa-eye"></i>
+          <h2 id="VValue"></h2>
+        </div>
+
+        <div class="ground-lvl">
+          Ground Level
+          <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+          <h2 id="GValue"></h2>
+        </div>
+
+        <div class="sea-lvl">
+          Sea Level
+          <i class="fa-solid fa-water"></i>
+          <h2 id="SeaValue"></h2>
+        </div>
+
+
+        <div class="pressure">
+          Pressure
+          <i class="fa-solid fa-volcano"></i>
+          <h2 id="PValue"></h2>
+        </div>
+
+       
+
+
+      </div>
+
+      
+
+      
+      
+
+      
+
+      
+    </div>
+    
+  </div>
+
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
